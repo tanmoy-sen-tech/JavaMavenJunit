@@ -1,0 +1,24 @@
+package com.personal.learning;
+
+import static org.junit.Assert.*;
+
+import java.util.Scanner;
+
+import org.junit.Test;
+
+public class getmaxTest {
+
+	@Test
+	public void test() {
+		int number1,number2,res;
+		System.out.println("enter two numbers ");
+		Scanner sc = new Scanner(System.in);
+		number1 = sc.nextInt();
+		Scanner sc1 = new Scanner(System.in);
+		number2 = sc1.nextInt();
+		getmax gt = new getmax();
+		int res1 = gt.findMax(number1, number2);
+		assertEquals(0, res1);
+	}
+
+}
