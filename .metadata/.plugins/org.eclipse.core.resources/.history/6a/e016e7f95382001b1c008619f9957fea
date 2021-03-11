@@ -1,0 +1,24 @@
+package com.personal.learning;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class sortarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num,num2;
+		Stack<Integer>s = new Stack<Integer>();
+		System.out.println("enter number of elements in array");
+		Scanner no = new Scanner(System.in);
+		num = no.nextInt();
+		for(int i = 0;i<num;i++) {
+			int x;
+			Scanner sc = new Scanner(System.in);
+			x =(sc.nextInt());
+			s.push(x);
+		}
+		System.out.println(s);
+	}
+
+}

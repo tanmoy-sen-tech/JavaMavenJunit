@@ -1,0 +1,40 @@
+package com.personal.learning;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class sortarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num,num2;
+		  int arr1[] ={3,60,35,2,45,320,5};  
+//		System.out.println("enter number of elements in array");
+//		Scanner no = new Scanner(System.in);
+//		num = no.nextInt();
+//		for(int i = 0;i<num;i++) {
+//			int x;
+//			Scanner sc = new Scanner(System.in);
+//			x =(sc.nextInt());
+//			s.push(x);
+//		}
+//		System.out.println(s);
+		  int[] res = sortArray(arr1);
+	}
+	public static int[] sortArray(int[] arr) {
+		int n = arr.length;  
+        int temp = 0;  
+         for(int i=0; i < n; i++){  
+                 for(int j=1; j < (n-i); j++){  
+                          if(arr[j-1] > arr[j]){  
+                                 //swap elements  
+                                 temp = arr[j-1];  
+                                 arr[j-1] = arr[j];  
+                                 arr[j] = temp;  
+                         }  
+		
+	}
+         }
+         return arr;
+	}
+}
