@@ -1,0 +1,28 @@
+package com.personal.learning;
+
+public class sqlsplit {
+
+	public static void main(String[] args) {
+		String input1 = "select empname,empcity from emp.txt where empcity=hyderabad";
+		String input2 = "select empname,empcity from emp.txt where empcity=hyderabad and empsalary>50000";
+		String[] res1 = splitString(input1) ;
+		String[] res2 = splitString(input1) ;
+		printArray(res2);
+	}
+	public static String[] splitString(String queryString) {
+		queryString = queryString.toLowerCase();
+		String out =  (queryString.split("where")[1]);
+		if(out.contains("and")) {
+			String[] res =  out.split("and");
+	        return res;
+		} else {
+			String[] resp= {out};
+			return resp;
+		}
+	}
+	public static void printArray(String[] arr) {
+		for(int i =0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}

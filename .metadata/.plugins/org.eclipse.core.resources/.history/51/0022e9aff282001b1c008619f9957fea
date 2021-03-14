@@ -1,0 +1,17 @@
+package com.personal.learning;
+
+public class sqlsplit {
+
+	public static void main(String[] args) {
+		String input1 = "select empname,empcity from emp.txt where empcity=hyderabad";
+		String res;
+System.out.println(splitString(input1));
+	}
+	public static String splitString(String queryString) {
+		queryString = queryString.toLowerCase();
+		return (queryString.split("where")[1]);
+
+		
+	}
+
+}

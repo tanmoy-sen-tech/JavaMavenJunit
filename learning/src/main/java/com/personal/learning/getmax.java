@@ -7,6 +7,7 @@ public class getmax {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int number1,number2,res;
+		String abc = "select an,box,cat from t1";
 		System.out.println("enter two numbers ");
 		Scanner sc = new Scanner(System.in);
 		number1 = sc.nextInt();
